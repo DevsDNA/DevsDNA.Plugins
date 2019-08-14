@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevsDNA.Plugins.SimpleLog", "DevsDNA.Plugins.SimpleLog\DevsDNA.Plugins.SimpleLog.csproj", "{4F01EB8E-D0B5-4592-BDAE-F62FE012C0AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevsDNA.Plugins.SimpleLogSample", "DevsDNA.Plugins.SimpleLogSample\DevsDNA.Plugins.SimpleLogSample.csproj", "{C0C28215-6AF6-44FC-A31A-4F065B76606A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F01EB8E-D0B5-4592-BDAE-F62FE012C0AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F01EB8E-D0B5-4592-BDAE-F62FE012C0AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F01EB8E-D0B5-4592-BDAE-F62FE012C0AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F01EB8E-D0B5-4592-BDAE-F62FE012C0AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0C28215-6AF6-44FC-A31A-4F065B76606A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0C28215-6AF6-44FC-A31A-4F065B76606A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0C28215-6AF6-44FC-A31A-4F065B76606A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0C28215-6AF6-44FC-A31A-4F065B76606A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {67E17FD5-7CCA-4CD2-9E7C-7A4510049BAC}
+	EndGlobalSection
+EndGlobal
