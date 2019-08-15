@@ -1,9 +1,12 @@
 ﻿namespace DevsDNA.Plugins.SimpleLog
 {
+	using Splat;
+
 	public static class Log
 	{
 		private static ILogService logService;
 		private static ILogTarget logTarget;
+		private static bool usingSplat = false;
 
 		public static ILogService Current
 		{
@@ -31,7 +34,17 @@
 			logTarget = target;
 			logService?.Dispose();
 			logService = new LogService(logTarget);
+			if (usingSplat)
+			{
+				Locator.CurrentMutable.RegisterConstant(Current);
+			}
 			return logService;
+		}
+
+		public static void AddServiceToSplat()
+		{
+			Locator.CurrentMutable.RegisterConstant(Current);
+			usingSplat = true;
 		}
 	}
 }
