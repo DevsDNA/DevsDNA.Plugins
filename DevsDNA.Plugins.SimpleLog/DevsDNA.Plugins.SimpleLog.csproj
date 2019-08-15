@@ -3,13 +3,17 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Authors>Marcos Antonio Blanco</Authors>
+    <Authors>DevsDNA</Authors>
     <Company>DevsDNA</Company>
     <PackageProjectUrl>https://github.com/DevsDNA/DevsDNA.Plugins/tree/master/DevsDNA.Plugins.SimpleLog</PackageProjectUrl>
     <RepositoryUrl>https://github.com/DevsDNA/DevsDNA.Plugins/tree/master/DevsDNA.Plugins.SimpleLog</RepositoryUrl>
     <PackageTags>DevsDNA,Log</PackageTags>
     <PackageLicenseExpression></PackageLicenseExpression>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <Description>Simple log using ReactiveUI</Description>
+    <Version>1.0.2</Version>
+    <FileVersion>1.0.0.0</FileVersion>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
