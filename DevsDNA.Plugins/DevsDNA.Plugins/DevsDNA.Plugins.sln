@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevsDNA.Plugins.SimpleLog", "DevsDNA.Plugins.SimpleLog\DevsDNA.Plugins.SimpleLog.csproj", "{4F01EB8E-D0B5-4592-BDAE-F62FE012C0AB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevsDNA.Plugins.SimpleLogSample", "DevsDNA.Plugins.SimpleLogSample\DevsDNA.Plugins.SimpleLogSample.csproj", "{C0C28215-6AF6-44FC-A31A-4F065B76606A}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SimpleLog", "SimpleLog", "{4D355956-953D-4593-A4BA-EB904D44C734}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevsDNA.Plugins.SimpleLog.Tests", "DevsDNA.Plugins.SimpleLog.Tests\DevsDNA.Plugins.SimpleLog.Tests.csproj", "{597F6E5C-5190-45C9-9B9D-0DBF61A2C252}"
@@ -21,10 +19,6 @@ Global
 		{4F01EB8E-D0B5-4592-BDAE-F62FE012C0AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F01EB8E-D0B5-4592-BDAE-F62FE012C0AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F01EB8E-D0B5-4592-BDAE-F62FE012C0AB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C0C28215-6AF6-44FC-A31A-4F065B76606A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C0C28215-6AF6-44FC-A31A-4F065B76606A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C0C28215-6AF6-44FC-A31A-4F065B76606A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C0C28215-6AF6-44FC-A31A-4F065B76606A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{597F6E5C-5190-45C9-9B9D-0DBF61A2C252}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{597F6E5C-5190-45C9-9B9D-0DBF61A2C252}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{597F6E5C-5190-45C9-9B9D-0DBF61A2C252}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,7 +29,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4F01EB8E-D0B5-4592-BDAE-F62FE012C0AB} = {4D355956-953D-4593-A4BA-EB904D44C734}
-		{C0C28215-6AF6-44FC-A31A-4F065B76606A} = {4D355956-953D-4593-A4BA-EB904D44C734}
 		{597F6E5C-5190-45C9-9B9D-0DBF61A2C252} = {4D355956-953D-4593-A4BA-EB904D44C734}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
