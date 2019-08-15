@@ -11,10 +11,10 @@
     <PackageLicenseExpression></PackageLicenseExpression>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <Description>Simple log using ReactiveUI</Description>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <FileVersion>1.0.0.0</FileVersion>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <PackageIconUrl>https://avatars1.githubusercontent.com/u/17566508?s=400&amp;u=38749888001a5f0ee47625614aeeeaa7b0e10044&amp;v=4</PackageIconUrl>
+    <PackageIconUrl>https://github.com/DevsDNA/DevsDNA.Plugins/blob/master/DevsDNAIcon.png</PackageIconUrl>
   </PropertyGroup>
 
   <ItemGroup>
