@@ -1,16 +1,21 @@
-﻿namespace DevsDNA.Plugins.SimpleLogSample
+﻿namespace DevsDNA.Plugins.SimpleLog.Tests
 {
 	using DevsDNA.Plugins.SimpleLog;
-    using System;
+	using System;
+    using System.Collections.Generic;
 
     public class LogTarget : ILogTarget
 	{
-		private long lineNumber = 0;
+		public long LineNumber { get; set; } = 0;
+
+		public List<string> LinesWrote { get; set; } = new List<string>();
+
 
 		public void Write(LogItem logItem)
 		{
 			string prefix = GetConsoleDebugPrefix(logItem.Level);
 			string line = $"\n{prefix} {logItem.Date.ToString("hh:mm:ss")} | {logItem.TAG} | {logItem.Level} | {logItem.CallerMemberName} | {logItem.Message} \n";
+			LinesWrote.Add(line);
 			Console.WriteLine(line);
 		}
 
@@ -20,13 +25,13 @@
 			switch (level)
 			{
 				case LogLevel.Info:
-					preFix = $"#### {lineNumber++} | INFO:";
+					preFix = $"#### {LineNumber++} | INFO:";
 					break;
 				case LogLevel.Warning:
-					preFix = $"#### {lineNumber++} | WARNING:";
+					preFix = $"#### {LineNumber++} | WARNING:";
 					break;
 				case LogLevel.Error:
-					preFix = $"#### {lineNumber++} | ERROR:";
+					preFix = $"#### {LineNumber++} | ERROR:";
 					break;
 				default:
 					preFix = string.Empty;

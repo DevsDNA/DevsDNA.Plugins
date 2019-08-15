@@ -1,9 +1,5 @@
 ﻿namespace DevsDNA.Plugins.SimpleLog
 {
-	using System;
-	using System.Collections.Generic;
-	using System.Text;
-
 	public static class Log
 	{
 		private static ILogService logService;

@@ -13,8 +13,9 @@
 		private ILogTarget target;
 		private bool disposedValue;
 		private IDisposable logSubscription;
+		private object lockPublish;
 
-		public LogService() : this(new DebugTarget())
+		public LogService() : this(null)
 		{
 		}
 
@@ -22,6 +23,7 @@
 		{
 			disposedValue = false;
 			this.target = target ?? new DebugTarget();
+			lockPublish = new object();
 			log = new Subject<LogItem>();
 			loggerObserver = log;
 			SubscribeToLog();
@@ -32,6 +34,7 @@
 			// Do not change this code. Put cleanup code in Dispose(bool disposing) above.
 			Dispose(false);
 		}
+
 
 		public void Dispose()
 		{
@@ -110,7 +113,10 @@
 
 		private void Publish(LogItem logItem)
 		{
-			log.OnNext(logItem);
+			lock (lockPublish)
+			{
+				log.OnNext(logItem);
+			}
 		}
 
 		private void SubscribeToLog()
@@ -129,11 +135,13 @@
 			{
 				return string.Empty;
 			}
+
 			StringBuilder st = new StringBuilder();
 			st.AppendLine($"--{title}--");
 			st.AppendLine($"MESSAGE: {ex.Message}");
 			st.AppendLine($"TOSTRING: {ex.ToString()}");
 			st.AppendLine($"STACKTRACE: {ex.StackTrace}");
+
 			if (ex.InnerException != null)
 			{
 				st.AppendLine(GetExceptionData(ex.InnerException, "INNER EXCEPTION"));
